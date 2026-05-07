@@ -1,0 +1,44 @@
+<html>
+    <html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/list.css" />
+    <title>Restaurant Finder</title>
+    <head>
+        <h1>The Restaurants</h1>
+        <button id="input" onclick="sortNameAscending()">Name Ascending</button>
+        <button id="input" onclick="sortNameDescending()">Name Decending</button>
+        <button id="input" onclick="sortCostAscending()">Cost Ascending</button>
+        <button id="input" onclick="sortCostDescending()">Cost Decending</button>
+        <button id="input" onclick="sortReviewAscending()">Review Ascending</button>
+        <button id="input" onclick="sortReviewDescending()">Review Decending</button>
+        <button id="input" onclick="sortXAscending()">X-Coordinate Ascending</button>
+        <button id="input" onclick="sortXDescending()">X-Coordinate Decending</button>
+        <button id="input" onclick="sortYAscending()">Y-Coordinate Ascending</button>
+        <button id="input" onclick="sortYDescending()">Y-Coordinate Decending</button>
+        <p id="time"></p>
+    </head>
+    <body>
+        <table class="center" id="table">
+            <tr>
+              <th>Name</th>
+              <th>Review</th>
+              <th>Cost/Person</th>
+              <th>Type</th>
+              <th>Coordinates</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+          </table>
+          <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+      </body>
+      <!--Do not move the line below-->
+      <script src="./dist/DO_NOT_TOUCH.js"></script>
+      <!--Do not move the line above-->
+      <script type="module" src="./dist/list.js"></script>
+</html>
