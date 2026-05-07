@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  <h1 style="color:white;">Find the Restaurant of your Dreams!</h1>
+  <br>
+  <a href="list.html">
+    <button>Click here to see the Restaurant of your Dreams!</button>
+  </a>
+  <br>
+  <body>
+    <h1 class="title">Basic Restaurant Search</h1>
+    <br>
+    <label for="name" class="label">Restaurant Name:</label>
+    <input type="text" id="name" name="name"/>
+    <label for="x-coordinate" class="label">X-Coordinate:</label>
+    <input type="text" id ="x-coordinate" name="x-coordinate"/>
+    <label for="y-coordinate" class="label">Y-Coordinate:</label>
+    <input type="text" id="y-coordinate" name="y-coordinate"/>
+    <label for="store-type" class="label">Type of Restaurant:</label>
+    <select name="store-type" id="store-type">
+      <optgroup label="Types">
+        <option value="burger">Burger</option>
+        <option value="coffee">Coffee</option>
+        <option value="pizza">Pizza</option>
+      </optgroup>
+      <optgroup label="Ethnic-Restaurants">
+        <option value="chinese">Chinese</option>
+        <option value="indian">Indian</option>
+        <option value="italian">Italian</option>
+        <option value="japanese">Japanese</option>
+        <option value="korean">Korean</option>
+        <option value="mexican">Mexican</option>
+      </optgroup>
+    </select>
+    <br>
+    <br>
+    <label for="price-min" class="label">Price Min:</label>
+    <input type="number" id="price-input-min" name="price-min"/>
+    <label for="price-max" class="label">Price Max:</label>
+    <input type="number" id="price-input-max" name="price-max"/>
+    <label for="review-min" class="label">Review Min:</label>
+    <input type="number" id="review-input-min" name="review-min"/>
+    <label for="review-max" class="label">Review Max:</label>
+    <input type="number" id="review-input-max" name="review-min"/>
+    <label for="review-max" class="label">Review Max:</label>
+    <!-- Table and other inputs go here -->
+    <div class="rest">
+      <button id="input" onclick="submit()">Submit Restaurant Attributes</button>
+      <button id="input" onclick="clearData()">Clear Restaurant Attributes</button>
+      <br>
+      <br>
+      <div class="table">    
+      </div>
+      <div class="heading"><h1>Running Time of the Functions:</h1></div>
+      <div class="perf-table">    
+      </div>
+      <h1>Shortest Path and Budget Travel Calculator</h1>
+      <label for="start-x-coordinate" class="label">Start X-Coordinate:</label>
+      <input type="text" id="start-x-coordinate" name="start-x-coordinate"/>
+      <br>
+      <label for="start-y-coordinate" class="label">Start Y-Coordinate:</label>
+      <input type="text" id="start-y-coordinate" name="start-y-coordinate"/>
+      <br>
+      <label for="end-x-coordinate" class="label">End X-Coordinate:</label>
+      <input type="text" id="end-x-coordinate" name="end-x-coordinate"/>
+      <br>
+      <label for="end-y-coordinate" class="label">End Y-Coordinate:</label>
+      <input type="text" id="end-y-coordinate" name="end-y-coordinate"/>
+      <br>
+      <label for="budget" class="label">Budget:</label>
+      <input type="number" id="budget" name="budget"/>
+      <br>
+      <button onclick="submitBudget()">Calculate Budget Route</button>
+      <button onclick="savingFuel()">Calculate Shortest Route</button>
+      <div id="route-output"></div>
+    </div>
+  </body>
+    <!--Do not move the line below-->
+    <script src="./dist/DO_NOT_TOUCH.js"></script>
+    <!--Do not move the line above-->
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>
+
